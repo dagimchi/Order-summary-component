@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --22px: 1.375rem;
+  --23px: 1.4375rem;
+  --24px: 1.5rem;
+  --25px: 1.5625rem;
+  --26px: 1.625rem;
+  --27px: 1.6875rem;
+  --28px: 1.75rem;
+  --29px: 1.8125rem;
+  --30px: 1.875rem;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 30px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: calc(450rem / 16);
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.img-hero {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.main-content {
+  padding: 0 48px;
+  text-align: center;
+}
+
+.primary-text {
+  font-size: var(--28px);
+  color: #1f2e55;
+  font-weight: 900;
+  margin-bottom: var(--17px);
+}
+
+.text {
+  font-size: var(--16px);
+  color: #717fa6;
+  line-height: 1.625;
+  font-weight: 500;
+  margin-bottom: var(--20px);
+}
+
+.plan {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #f7f9ff;
+  border-radius: 11px;
+  padding: 25px 24px;
+  margin-bottom: calc(32rem / 16);
+}
+
+.plan-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plan-annual {
+  font-size: var(--16px);
+  color: #1f2e55;
+  font-weight: 900;
+}
+
+.plan-price {
+  font-size: var(--16px);
+  color: #717fa6;
+  font-weight: 500;
+}
+
+.btn-change {
+  font-size: var(--14px);
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: auto;
+  border: none;
+  color: #382ae1;
+  background-color: #f7f9ff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btn-change:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+.btn-link:link,
+.btn-link:visited {
+  font-size: var(--15px);
+  font-weight: 900;
+  display: block;
+  text-decoration: none;
+  padding: 1em 0;
+  color: #fff;
+  background-color: #382ae1;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px 0px #382ae131;
+  margin-bottom: calc(32rem / 16);
+}
+
+.btn-link:hover,
+.btn-link:active {
+  background-color: #766cf1;
+  box-shadow: 0px 16px 20px 0px #382ae131;
+}
+
+.btn-cancel {
+  font-size: var(--15px);
+  font-family: "Red Hat Display", sans-serif;
+  color: #717fa6;
+  font-weight: 900;
+  border: none;
+  background-color: #f7f9ff;
+  cursor: pointer;
+  margin-bottom: calc(48rem / 16);
+}
+
+.btn-cancel:hover {
+  color: #1f2e55;
+}
