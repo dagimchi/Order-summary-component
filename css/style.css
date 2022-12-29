@@ -26,12 +26,12 @@ html {
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  padding: 0 30px;
   background: #e0e8ff;
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 30px;
 }
 
 main {
@@ -43,7 +43,7 @@ main {
 }
 
 .card {
-  width: calc(450rem / 16);
+  max-width: calc(450rem / 16);
   margin: 0 auto;
   border-radius: 20px;
   background: #fff;
@@ -153,4 +153,34 @@ main {
 
 .btn-cancel:hover {
   color: #1f2e55;
+}
+
+/* ************************
+MEDIA QUERIES
+************************ */
+
+@media (max-width: 28em) {
+  .plan {
+    flex-direction: column;
+  }
+
+  .btn-change {
+    margin-left: 0;
+  }
+}
+
+/* ***********************
+Safari gap fix
+*********************** */
+
+.no-flexbox-gap .card {
+  margin-bottom: 20px;
+}
+
+.no-flexbox-gap .plan img {
+  margin-right: 20px;
+}
+
+.no-flexbox-gap .plan-stack .plan-annual {
+  margin-bottom: 6px;
 }
